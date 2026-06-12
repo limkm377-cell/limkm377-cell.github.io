@@ -78,11 +78,55 @@
     <section id="cv" aria-labelledby="cv-heading">
       <p class="section-label" aria-hidden="true">Resume</p>
       <h2 id="cv-heading">CV / Resume</h2>
-      <div class="cv-card">
-        <div class="cv-card-text">
-          <p>이력서 (Curriculum Vitae)</p>
-          <p>최신 이력서를 다운로드하거나 확인할 수 있습니다. 파일 준비 중입니다.</p>
+
+      <div class="cv-body">
+
+        <!-- Education -->
+        <div class="cv-group">
+          <h3 class="cv-group-title">Education</h3>
+          <div class="cv-item">
+            <div class="cv-item-dot" aria-hidden="true"></div>
+            <div class="cv-item-content">
+              <p class="cv-item-main">Seoul National University</p>
+              <p class="cv-item-sub">Naval Architecture and Ocean Engineering</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Skills -->
+        <div class="cv-group">
+          <h3 class="cv-group-title">Skills</h3>
+          <div class="cv-skills">
+            <span class="course-chip">Python</span>
+            <span class="course-chip">C++</span>
+            <span class="course-chip">GitHub Pages</span>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="cv-group">
+          <h3 class="cv-group-title">Experience</h3>
+          <div class="cv-item">
+            <div class="cv-item-dot" aria-hidden="true"></div>
+            <div class="cv-item-content">
+              <p class="cv-item-main">Personal Website Project</p>
+              <p class="cv-item-sub">정적 개인 포트폴리오 사이트 설계 및 구현 (HTML/CSS, GitHub Pages)</p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-dot" aria-hidden="true"></div>
+            <div class="cv-item-content">
+              <p class="cv-item-main">Ship Resistance Analysis Project</p>
+              <p class="cv-item-sub">선박 형상 파라미터 기반 저항 계수 추정 모델 탐구</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Download -->
+      <div class="cv-download-row">
+        <p class="cv-download-note">전체 이력서(CV) 파일을 다운로드할 수 있습니다. <em>파일 준비 중입니다.</em></p>
         <a
           class="btn btn-primary"
           href="assets/cv-placeholder.txt"
@@ -163,11 +207,24 @@
       <p class="section-label" aria-hidden="true">Transparency</p>
       <h2 id="ai-heading">AI Usage</h2>
       <div class="ai-card">
+        <div class="ai-meta-row">
+          <span class="ai-meta-label">Tool</span>
+          <span class="ai-meta-value">Replit Agent</span>
+        </div>
+        <div class="ai-meta-row">
+          <span class="ai-meta-label">Prompt</span>
+          <blockquote class="ai-prompt">
+            Build a static personal website in the repo root.<br/>
+            Create an assets folder.<br/>
+            Use a placeholder profile image.<br/>
+            Create a placeholder CV link.
+          </blockquote>
+        </div>
         <p>
-          이 웹사이트는 <strong>Replit Agent</strong>(AI 코딩 도우미)의 도움을 받아
-          HTML, CSS 구조를 작성하고 접근성 및 반응형 레이아웃을 구성했습니다.
+          이 웹사이트는 <strong>Replit Agent</strong>의 도움을 받아 HTML, CSS 구조를 작성하고
+          접근성 및 반응형 레이아웃을 구성했습니다.
           디자인 시스템은 <strong>Apple Human Interface Guidelines</strong>에서 영감을 받아
-          직접 정의한 <code style="font-family: var(--font-mono); font-size: 13px; background: var(--bg-tertiary); padding: 2px 6px; border-radius: 5px;">DESIGN.md</code>를 기반으로 합니다.
+          직접 정의한 <code class="inline-code">DESIGN.md</code>를 기반으로 합니다.
         </p>
         <p>
           AI는 코드 생성과 구조 제안에 활용되었으며, 콘텐츠·정보 입력 및 최종 결정은

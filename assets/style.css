@@ -378,6 +378,78 @@ section > h2 {
   transform: translateY(-1px);
 }
 
+/* ── CV expanded ───────────────────────────────── */
+.cv-body {
+  background: var(--bg-secondary);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--s5) var(--s6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s6);
+}
+.cv-group { display: flex; flex-direction: column; gap: var(--s3); }
+.cv-group-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: var(--s2);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.cv-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s4);
+  padding: var(--s2) 0;
+}
+.cv-item-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--r-full);
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+.cv-item-main {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.cv-item-sub {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.cv-download-row {
+  margin-top: var(--s4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s4);
+  padding: var(--s4) var(--s5);
+  background: var(--bg-secondary);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+}
+.cv-download-note {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.cv-download-note em { color: var(--text-tertiary); font-style: normal; }
+
+@media (max-width: 600px) {
+  .cv-body { padding: var(--s4); }
+  .cv-download-row { flex-direction: column; align-items: flex-start; }
+}
+
 /* ── AI Usage ──────────────────────────────────── */
 .ai-card {
   background: var(--bg-secondary);
@@ -389,12 +461,52 @@ section > h2 {
   flex-direction: column;
   gap: var(--s4);
 }
+.ai-meta-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s4);
+  flex-wrap: wrap;
+}
+.ai-meta-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  min-width: 56px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+.ai-meta-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.ai-prompt {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border-radius: var(--r-sm);
+  padding: var(--s3) var(--s4);
+  border: none;
+  flex: 1;
+  white-space: pre-wrap;
+}
 .ai-card p {
   font-size: 15px;
   color: var(--text-secondary);
   line-height: 1.6;
 }
 .ai-card strong { color: var(--text-primary); }
+.inline-code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 5px;
+}
 
 /* ── Contact ───────────────────────────────────── */
 .contact-list {
