@@ -1,0 +1,2 @@
+Replace this file with your actual CV/Resume PDF.
+Rename it to cv.pdf and update the link in index.html accordingly.
